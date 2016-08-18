@@ -1,0 +1,245 @@
+<Skin>
+   <Resources>
+   
+      <Font>
+         <Name>Font1</Name>
+	 <Alpha>255</Alpha>
+         <File>menufont.ttf</File>
+	 <Size>20</Size>
+      </Font>
+      
+      <Font>
+         <Name>Milhouse</Name>
+	 <Alpha>255</Alpha>
+         <File>menufont2.ttf</File>
+	 <Size>22</Size>
+      </Font>
+      
+      <Image>
+         <Name>Background</Name>
+	 <Alpha>255</Alpha>
+	 <File>control.jpg</File>
+      </Image>
+      
+      <Image>
+         <Name>Dialog</Name>
+         <Alpha>255</Alpha>
+         <File>dialogback.png</File>
+      </Image>
+      
+      <Image>
+         <Name>Entry_BG</Name>
+	 <Alpha>0</Alpha>
+	 <File>entry_bg.png</File>
+      </Image>
+
+      <Image>
+         <Name>Entry_BG2</Name>
+	 <Alpha>0</Alpha>
+	 <File>entrybg_sel.png</File>
+      </Image>      
+            
+      
+   </Resources>
+   
+   
+   <Elements>
+   
+      <Element>
+         <Content>BackgroundImage</Content>
+	 <Dimensions>
+	    <Width>640</Width>
+	    <Height>480</Height>
+	    <Top>0</Top>
+	    <Left>0</Left>
+	 </Dimensions>
+	 <Layer>0</Layer>
+	 <Resource>Background</Resource>
+      </Element>
+      
+      <Element>
+         <Content>Menu</Content>
+         <Dimensions>
+	    <Width>200</Width>
+	    <Height>260</Height>
+	    <Top>200</Top>
+	    <Left>70</Left>
+	 </Dimensions>
+         <Align>Right</Align>
+      </Element>
+      
+      <Element>
+         <Content>MenuFont</Content>
+         <Resource>Font1</Resource>
+	 <Color>
+	    <Red>200</Red>
+	    <Green>200</Green>
+	    <Blue>200</Blue>
+	 </Color>
+      </Element>
+
+      <Element>
+         <Content>MenuSelectedFont</Content>
+         <Resource>Milhouse</Resource>
+	 <Color>
+	    <Red>250</Red>
+	    <Green>240</Green>
+	    <Blue>0240</Blue>
+	 </Color>
+      </Element>
+            
+      <Element>
+         <Content>MenuEntryBG</Content>
+         <Resource>Entry_BG</Resource>
+         <Dimensions>
+	    <Top>0</Top>
+	    <Left>0</Left>
+	    <Width>200</Width>
+	    <Height>40</Height>
+	 </Dimensions>
+      </Element>
+
+      <Element>
+         <Content>MenuEntrySelectedBG</Content>
+         <Resource>Entry_BG2</Resource>
+         <Dimensions>
+	    <Top>0</Top>
+	    <Left>0</Left>
+	    <Width>200</Width>
+	    <Height>40</Height>
+	 </Dimensions>
+      </Element>
+            
+      <Element>
+         <Content>BoardTemp</Content>
+         <Resource>Font1</Resource>
+         <Dimensions>
+	    <Top>211</Top>
+	    <Left>523</Left>
+	    <Width>200</Width>
+	    <Height>40</Height>
+	 </Dimensions>
+	 <Color>
+	    <Red>204</Red>
+	    <Blue>204</Blue>
+	    <Green>204</Green>
+	 </Color>
+      </Element>
+      
+      <Element>
+         <Content>CPUTemp</Content>
+         <Resource>Font1</Resource>
+         <Dimensions>
+	    <Top>162</Top>
+	    <Left>523</Left>
+	    <Width>200</Width>
+	    <Height>40</Height>
+	 </Dimensions>
+	 <Color>
+	    <Red>204</Red>
+	    <Blue>204</Blue>
+	    <Green>204</Green>
+	 </Color>
+      </Element>
+      
+      <Element>
+         <Content>TrayState</Content>
+         <Resource>Font1</Resource>
+         <Dimensions>
+	    <Top>262</Top>
+	    <Left>360</Left>
+	    <Width>200</Width>
+	    <Height>40</Height>
+	 </Dimensions>
+	 <Color>
+	    <Red>204</Red>
+	    <Blue>204</Blue>
+	    <Green>204</Green>
+	 </Color>
+         <Align>Right</Align>
+      </Element>
+      
+      <Element>
+         <Content>MessageTitle</Content>
+         <Resource>Font1</Resource>
+         <Dimensions>
+	    <Top>145</Top>	    <Left>120</Left>	    <Width>500</Width>	    <Height>30</Height>
+	 </Dimensions>
+	 <Color>
+	    <Red>70</Red>	    <Blue>0</Blue>	    <Green>0</Green>
+    	 </Color>
+         <Align>Center</Align>
+      </Element>      
+
+      <Element>
+         <Content>MessageText</Content>
+         <Resource>Font1</Resource>
+         <Dimensions>
+	    <Top>210</Top>	    <Left>150</Left>	    <Width>480</Width>	    <Height>100</Height>
+	 </Dimensions>
+	 <Color>
+	    <Red>70</Red>	    <Blue>90</Blue>	    <Green>70</Green>
+	 </Color>
+         <Align>Center</Align>
+      </Element>  
+      
+      <Element>
+        <Content>MessageBackground</Content>
+         <Dimensions>
+	    <Width>480</Width>	    <Height>340</Height>	    <Top>90</Top>	    <Left>80</Left>
+	 </Dimensions>
+	 <Layer>0</Layer>
+	 <Resource>Dialog</Resource>
+      </Element>       
+
+      <Element>
+         <Content>QuestionTitle</Content>
+         <Resource>Font1</Resource>
+         <Dimensions>
+	    <Top>155</Top>	    <Left>100</Left>	    <Width>500</Width>	    <Height>30</Height>
+	 </Dimensions>
+	 <Color>
+	    <Red>70</Red>	    <Blue>0</Blue>	    <Green>0</Green>
+    	 </Color>
+         <Align>Center</Align>
+      </Element>      
+
+      <Element>
+         <Content>QuestionText</Content>
+         <Resource>Font1</Resource>
+         <Dimensions>
+	    <Top>190</Top>	    <Left>110</Left>	    <Width>480</Width>	    <Height>100</Height>
+	 </Dimensions>
+	 <Color>
+	    <Red>0</Red>	    <Blue>200</Blue>	    <Green>70</Green>
+	 </Color>
+         <Align>Center</Align>
+      </Element>  
+      
+      <Element>
+        <Content>QuestionBackground</Content>
+         <Dimensions>
+	    <Width>500</Width>	    <Height>380</Height>	    <Top>150</Top>	    <Left>100</Left>
+	 </Dimensions>
+	 <Layer>0</Layer>
+	 <Resource>Background</Resource>
+      </Element>
+      
+      <Element>
+         <Content>Status</Content>
+         <Dimensions>
+           <Width>300</Width>
+           <Height>40</Height>
+           <Top>1140</Top>
+           <Left>1340</Left>
+         </Dimensions>
+         <Align>Right</Align>
+         <Resource>Milhouse</Resource>
+         <Color>
+            <Red>200</Red>
+            <Green>200</Green>
+            <Blue>200</Blue>
+         </Color>
+      </Element>    
+   </Elements>
+</Skin>

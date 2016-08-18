@@ -1,0 +1,61 @@
+OpenDash can be built in three different environments.
+
+Linux
+-----
+
+Let's do the easiest first, shall we?  You need to have installed the following libraries:
+
+- SDL (it and the two below found at http://www.libsdl.org)
+- SDL_image (and requisites)
+- SDL_ttf (and requisites)
+
+- libxml2 (found at http://www.xmlsoft.org)
+
+Ensure that both sdl-config and xml2-config exist and are in your current path.  Then enter the ./src directory and execute:
+
+make -f makefile.linux
+
+It should generate the binary file OpenDash.  Now read RUNNING.txt to figure out why it is segfaulting :).
+
+Xbox
+----
+
+The real goal of this exercise, after all.  You need:
+
+- OpenXDK from recent (post 11/11/05) CVS.  Anything else will probably fail to either build or run, and even if it works it will not be as stable.
+
+- On top of this, you need libxml2 for xbox.  For now, get the entire source release for xbox: http://th0mas.xbox-scene.com/releases/libx...2.6.17-xbox.tgz
+
+untar that, enter the directory and execute "make -f Makefile.xbox"
+
+it should generate libxml2.a, copy it to /usr/local/openxdk/lib
+
+and copy the libxml2-2.6.17/include/* to /usr/local/openxdk/include
+
+(so you should have a directory /usr/local/openxdk/include/libxml2 that contains the majority of the include files)
+
+
+- With the libxml2.a file in your openxdk lib/ directory and the libxml/ directory in your openxdk include directory, you are now ready to build OpenDash for the xbox.  With the i386-pc-xbox-* binaries (or links) in your PATH, enter the OpenDash/src directory and run:
+
+make
+(or, if you've already built the linux version), make clean all
+
+It should build.  If not post a message on the xbox-scene OpenDash forum.  Before trying to run on the xbox please read "RUNNING.txt" to know where to put what, etc.
+
+Windows
+-------
+
+Get Mingw32 and MSYS.  Install binary distributions of:
+- SDL
+- SDL_image
+- SDL_ttf
+- libxml2
+
+using the MSYS command line.  Get a copy of OpenDash source from CVS.  In an MSYS shell, enter the OpenDash directory and run:
+
+make -f makefile.windows.
+
+YMMV.  I had to reinstall and try different versions of the windows libraries before I could get this to work.
+
+As much as I'd like to help you get it working with windows, this is really not my primary goal.  That being said, post a message and worst case scenario, I will rar my entire MSYS directory and send it to you.
+

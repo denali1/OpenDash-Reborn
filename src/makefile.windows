@@ -1,0 +1,31 @@
+#
+
+MOBJS = MenuNode.o SubMenuNode.o FileMenu.o XBEMenu.o Script.o SkinMenu.o BootXBE.o DialogBox.o QuestionBox.o LoadSkin.o FileAction.o XboxAction.o LaunchDVD.o LoadKey.o XboxInfo.o Controller.o HotKey.o Environment.o FontResource.o Resources.o Resource.o ImageResource.o Element.o Elements.o Generic.o Setting.o
+
+OBJS = OpenDash.o $(MOBJS)
+
+CPP = g++
+
+CPP_FLAGS = -g  -I/usr/include/SDL -DNO_TYPEINFO -DWINDOWS
+
+
+all: \
+	OpenDash
+
+.cpp.o:
+	$(CPP) -c $< $(CPP_FLAGS) -I/usr/include -I/usr/local/include -I/usr/include/SDL
+
+OpenDash: $(OBJS)
+	$(CPP) -o $@ $(OBJS) -L/usr/lib -lSDL -lSDL_ttf -lSDL_image -lxml2 -liconv -lz -lstdc++
+
+testBootXBE: testBootXBE.o $(OBJS)
+	$(CPP) -o $@ testBootXBE.o $(MOBJS) -lSDL_ttf -lSDL_image `xml2-config --libs` -lstdc++
+
+testController: testController.o $(OBJS)
+	$(CPP) -o $@ testController.o $(MOBJS) -lSDL_ttf -lSDL_image `xml2-config --libs` -lstdc++
+
+
+clean: 
+	rm -f *.o *.exe *.dll *.xbe *.cxbe
+
+

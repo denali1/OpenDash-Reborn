@@ -1,0 +1,186 @@
+<Environment>
+   <Dialog>
+      <TrayOpen>Open!</TrayOpen>
+      <TrayNoDisk>No Disk!</TrayNoDisk>
+      <TrayDisk>Disk!</TrayDisk>
+      <TrayOpening>Opening!</TrayOpening>
+      <TrayClosing>Closing!</TrayClosing>
+      <TrayBusy>Busy!</TrayBusy>
+<CopyFailed_OpenSource>File Copy Failed. 
+could not open source file 
+%s.</CopyFailed_OpenSource>
+<CopyFailed_SourceMissing>File Copy Failed.
+Could not find source file
+%s.</CopyFailed_SourceMissing>
+<CopyFailed_OpenDestination>File Copy Failed.
+could not open destination file
+%s.</CopyFailed_OpenDestination>
+<CopyFailed_Unknown>File Copy Failed.
+Error during copy from 
+%s 
+to 
+%s.</CopyFailed_Unknown>
+<TimerText>%d Seconds Remaining.</TimerText>
+   </Dialog>
+
+   <Menu>
+      <Name>Menu Root</Name>
+      <Children>
+         <LaunchDVD>
+	    <Name>Launch DVD</Name>
+	    <Status>Launch XBox DVD</Status>
+	    <Path>default.xbe</Path>
+	 </LaunchDVD>
+         <SubMenu>
+	    <Name>Games</Name>
+	    <Children>
+               <XBEMenu>
+	          <Name>Homebrew</Name>
+  	          <Directory>f:/homebrew/</Directory>
+	          <Target>default.xbe</Target>
+	          <HotKey>Ctrl_A</HotKey>
+	          <StatusText>Homebrew Games...</StatusText>
+	       </XBEMenu>
+	       <XBEMenu>
+	          <Name>Retail</Name>
+		  <Directory>f:/retail/</Directory>
+		  <Target>default.xbe</Target>
+		  <HotKey>Ctrl_B</HotKey>
+		  <StatusText>Retail Games...</StatusText>
+	       </XBEMenu>
+	    </Children>
+         </SubMenu>
+	 
+	 <XBEMenu>
+	    <Name>Apps</Name>
+  	    <Directory>e:/apps/</Directory>
+	    <Target>default.xbe</Target>
+	    <StatusText>Apps Menu...</StatusText>
+	 </XBEMenu>
+         
+         <QuestionBox>
+            <Name>Question!</Name>
+            <Title>A or B?</Title>
+            <StatusText>Question..</StatusText>
+            <Message>Select 'A' or 'B'</Message>
+	    <Timeout>5</Timeout>
+	    <Default>Yes</Default>
+            <Yes>
+               <DialogBox>
+                  <Name>Message!</Name>
+                  <Message>You Selected 'A'</Message>
+                  <Title>'A'</Title>
+               </DialogBox>
+            </Yes>
+            <No>
+               <DialogBox>
+                  <Name>Message!</Name>
+                  <Message>You Selected 'B'</Message>
+                  <Title>'B'</Title>
+               </DialogBox>
+            </No>
+         </QuestionBox>
+         
+         <Script>
+            <Name>Script!</Name>
+            <StatusText>Script!</StatusText>
+            <Children>
+               <DialogBox>
+                  <Name>Event1</Name>
+<Message>This is the
+first script event!</Message>
+                  <Title>First Event</Title>
+               </DialogBox>
+               
+               <DialogBox>
+                  <Name>Event2</Name>
+<Message>This is the
+second event!</Message>
+                  <Title>Second Event</Title>
+               </DialogBox>
+            </Children>
+         </Script>
+	 
+	 <SubMenu>
+	     <Name>Test</Name>
+	     <StatusText>Test Actions</StatusText>
+	     <Children>
+	         <Script>
+		     <Name>Copy Files</Name>
+		     <Children>
+		        <FileAction>
+		           <Name>Copy File</Name>
+		           <Action>Copy</Action>
+		           <Source>f:/test/file1.dat</Source>
+		           <Destination>e:/test/file2.dat</Destination>
+		        </FileAction>
+			<FileAction>
+			   <Name>Copy File</Name>
+			   <Action>Copy</Action>
+			   <Source>e:/test/file2.dat</Source>
+			   <Destination>f:/test/file3.dat</Destination>
+			</FileAction>
+			<FileAction>
+			   <Name>Copy File</Name>
+			   <Action>Copy</Action>
+			   <Source>f:/test/file3.dat</Source>
+			   <Destination>c:/test/file4.dat</Destination>
+			</FileAction>
+	            </Children>
+	        </Script>
+		<BootXBE>
+		   <Name>Boot XBE</Name>
+		   <Path>c:/evoxdash.xbe</Path>
+		</BootXBE>
+                <FileAction>
+		   <Name>Copy Dir</Name>
+		   <Action>CopyDirectory</Action>
+		   <Source>f:/test/</Source>
+		   <Destination>f:/test2</Destination>
+		</FileAction>
+		<LoadSkin>
+		   <Name>Load Skin 1</Name>
+		   <Path>d:/skin1/skin.xml</Path>
+		</LoadSkin>
+		<LoadSkin>
+		   <Name>Load Skin 2</Name>
+		   <Path>d:/skin2/skin.xml</Path>
+		</LoadSkin>
+             </Children>
+	 </SubMenu>
+		     
+	 <SubMenu>
+	     <Name>Actions</Name>
+	     <StatusText>Xbox Actions</StatusText>
+	     <Children>
+	         <XboxAction>
+	             <Name>Reboot</Name>
+	             <StatusText>Reboot XBox</StatusText>
+	             <Action>Reboot</Action>
+	         </XboxAction>
+
+	         <XboxAction>
+	             <Name>Shutdown</Name>
+ 	             <StatusText>Shutdown Xbox</StatusText>
+	             <Action>Shutdown</Action>
+	         </XboxAction>	 
+		 
+		 <XboxAction>
+		     <Name>Open Tray</Name>
+		     <StatusText>Open DVD Tray</StatusText>
+		     <Action>OpenTray</Action>
+		 </XboxAction>
+		 
+		 <XboxAction>
+		     <Name>Close Tray</Name>
+		     <StatusText>Close DVD Tray</StatusText>
+		     <Action>CloseTray</Action>
+		 </XboxAction>
+	 
+	     </Children>
+	 </SubMenu>
+         
+      </Children>
+   </Menu>
+   
+</Environment>

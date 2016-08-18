@@ -1,0 +1,156 @@
+<Environment>
+   <Dialog>
+      <TrayOpen>Open!</TrayOpen>
+      <TrayNoDisk>No Disk!</TrayNoDisk>
+      <TrayDisk>Disk!</TrayDisk>
+      <TrayOpening>Opening!</TrayOpening>
+      <TrayClosing>Closing!</TrayClosing>
+      <TrayBusy>Busy!</TrayBusy>
+<CopyFailed_OpenSource>File Copy Failed. 
+could not open source file 
+%s.</CopyFailed_OpenSource>
+<CopyFailed_SourceMissing>File Copy Failed.
+Could not find source file
+%s.</CopyFailed_SourceMissing>
+<CopyFailed_OpenDestination>File Copy Failed.
+could not open destination file
+%s.</CopyFailed_OpenDestination>
+<CopyFailed_Unknown>File Copy Failed.
+Error during copy from 
+%s 
+to 
+%s.</CopyFailed_Unknown>
+<TimerText>%d Seconds Remaining.</TimerText>
+   </Dialog>
+   
+   <Menu>
+      <Name>Menu Root</Name>
+      <Children>
+      
+         <LaunchDVD>
+	    <Name>Launch DVD</Name>
+	    <Path>default.xbe</Path>
+	    <StatusText>Launch DVD</StatusText>
+	 </LaunchDVD>
+	 
+	 <XBEMenu>
+	    <Name>Games</Name>
+  	    <Directory>/home/diabolik/xbins/fakedir/</Directory>
+	    <Target>default.xbe</Target>
+	    <HotKey>Ctrl_A</HotKey>
+	    <StatusText>Games Menu...</StatusText>
+	 </XBEMenu>
+         
+	 <XBEMenu>
+	    <Name>Apps</Name>
+  	    <Directory>e:/apps/</Directory>
+	    <Target>default.xbe</Target>
+	    <StatusText>Apps Menu...</StatusText>
+	 </XBEMenu>
+         
+	 <SubMenu>
+	    <Name>System</Name>
+	    <StatusText>System Menu...</StatusText>
+	    <Children>
+	       <QuestionBox>
+	          <Name>Backup Dash</Name>
+		  <Title>Backup Dash - Sure?</Title>
+		  <StatusText>Backup Dash to c:/backup</StatusText>
+		  <Message>Are you sure you want to back
+up the dash to c:/backup/?
+
+Press 'A' to Continue,
+      'B' to Cancel</Message>
+                  <Yes>
+		     <Script>
+		        <Name></Name>
+			<Children>
+			   <FileAction>
+			      <Name></Name>
+			      <Action>CreateDirectory</Action>
+			      <Source>c:/backup</Source>
+			   </FileAction>
+			   <FileAction>
+			      <Name></Name>
+		              <Action>Copy</Action>
+		              <Source>c:/xboxdash.xbe</Source>
+		              <Destination>c:/backup/xboxdash.xbe</Destination>
+		           </FileAction>
+			   <DialogBox>
+			      <Name></Name>
+			      <Message>Dash Backed up to c:/backup.</Message>
+			      <Title>Backup Complete.</Title>
+			   </DialogBox>
+			</Children>
+		     </Script>
+		  </Yes>
+		  <No>
+		     <DialogBox>
+		        <Name></Name>
+			<Message>Backup Dash Cancelled.</Message>
+			<Title>Cancelled.</Title>
+	             </DialogBox>
+		  </No>
+	       </QuestionBox>
+	       <XboxAction>
+	          <Name>Reboot</Name>
+		  <StatusText>Reboot Xbox</StatusText>
+		  <Action>Reboot</Action>
+	       </XboxAction>
+	       
+	       <XboxAction>
+	          <Name>Shutdown</Name>
+ 	          <StatusText>Shutdown Xbox</StatusText>
+	          <Action>Shutdown</Action>
+	       </XboxAction>	 
+		 
+	       <XboxAction>
+		  <Name>Open Tray</Name>
+		  <StatusText>Open DVD Tray</StatusText>
+		  <Action>OpenTray</Action>
+	       </XboxAction>
+		 
+	       <XboxAction>
+		  <Name>Close Tray</Name>
+		  <StatusText>Close DVD Tray</StatusText>
+		  <Action>CloseTray</Action>
+	       </XboxAction>
+	       
+	    </Children>
+	 </SubMenu>
+
+         <SubMenu>
+	     <Name>Skins</Name>
+	     <StatusText>Skins</StatusText>
+	     <Children>
+		<LoadSkin>
+		   <Name>Load Skin 1</Name>
+		   <Path>skin1/skin.xml</Path>
+		</LoadSkin>
+		<LoadSkin>
+		   <Name>Load Skin 2</Name>
+		   <Path>skin2/skin.xml</Path>
+		</LoadSkin>
+		<LoadSkin>
+		   <Name>Load Skin 3</Name>
+		   <Path>skin3/skin.xml</Path>
+		</LoadSkin>
+             </Children>
+	 </SubMenu>
+	 
+         <XboxAction>
+	    <Name>Reboot</Name>
+	    <StatusText>Reboot Xbox</StatusText>
+	    <Action>Reboot</Action>
+	 </XboxAction>
+	       
+	 <XboxAction>
+	    <Name>Shutdown</Name>
+ 	    <StatusText>Shutdown Xbox</StatusText>
+	    <Action>Shutdown</Action>
+	 </XboxAction>     
+         
+      </Children>
+   </Menu>
+   
+</Environment>

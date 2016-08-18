@@ -1,0 +1,305 @@
+<Skin>
+   <Resources>
+   
+      
+      <Image>
+         <Name>Background</Name>
+	 <Alpha>255</Alpha>
+	 <File>bg.png</File>
+      </Image>
+      
+      <Image>
+         <Name>ProgressBack</Name>
+	 <Alpha>255</Alpha>
+	 <File>progress.png</File>
+      </Image>
+      
+      <Font>
+         <Name>Font1</Name>
+	 <Alpha>255</Alpha>
+         <File>menufont.ttf</File>
+	 <Size>25</Size>
+      </Font>
+      
+      <Font>
+         <Name>Milhouse</Name>
+	 <Alpha>255</Alpha>
+         <File>menufont2.ttf</File>
+	 <Size>30</Size>
+      </Font>
+      
+      <Image>
+         <Name>Dialog</Name>
+	 <Alpha>255</Alpha>
+	 <File>dialog.png</File>
+      </Image>
+      
+   </Resources>
+   
+   
+   <Elements>
+   
+      <Element>
+         <Content>BackgroundImage</Content>
+	 <Dimensions>
+	    <Width>640</Width>
+	    <Height>480</Height>
+	    <Top>0</Top>
+	    <Left>0</Left>
+	 </Dimensions>
+	 <Layer>0</Layer>
+	 <Resource>Background</Resource>
+      </Element>
+      
+      <Element>
+         <Content>Menu</Content>
+         <Dimensions>
+	    <Width>500</Width>
+	    <Height>200</Height>
+	    <Top>200</Top>
+	    <Left>70</Left>
+	 </Dimensions>
+         <Align>Center</Align>
+      </Element>
+      
+      <Element>
+         <Content>MenuFont</Content>
+         <Resource>Font1</Resource>
+	 <Color>
+	    <Red>200</Red>
+	    <Green>200</Green>
+	    <Blue>200</Blue>
+	 </Color>
+      </Element>
+
+      <Element>
+         <Content>MenuEntryBG</Content>
+         <Dimensions>
+	    <Top>0</Top>
+	    <Left>0</Left>
+	    <Width>200</Width>
+	    <Height>40</Height>
+	 </Dimensions>
+      </Element>
+      
+      <Element>
+         <Content>MenuSelectedFont</Content>
+         <Resource>Milhouse</Resource>
+	 <Color>
+	    <Red>250</Red>
+	    <Green>240</Green>
+	    <Blue>240</Blue>
+	 </Color>
+      </Element>
+            
+      <Element>
+         <Content>MenuEntrySelectedBG</Content>
+         <Resource>Background</Resource>
+         <Dimensions>
+	    <Top>0</Top>
+	    <Left>0</Left>
+	    <Width>200</Width>
+	    <Height>40</Height>
+	 </Dimensions>
+      </Element>
+      
+            
+      <Element>
+         <Content>BoardTemp</Content>
+         <Resource>Font1</Resource>
+         <Dimensions>
+	    <Top>10</Top>
+	    <Left>10</Left>
+	    <Width>200</Width>
+	    <Height>40</Height>
+	 </Dimensions>
+	 <Color>
+	    <Red>100</Red>
+	    <Blue>100</Blue>
+	    <Green>100</Green>
+	 </Color>
+      </Element>
+      
+      <Element>
+         <Content>CPUTemp</Content>
+         <Resource>Font1</Resource>
+         <Dimensions>
+	    <Top>50</Top>
+	    <Left>10</Left>
+	    <Width>200</Width>
+	    <Height>40</Height>
+	 </Dimensions>
+	 <Color>
+	    <Red>70</Red>
+	    <Blue>70</Blue>
+	    <Green>70</Green>
+	 </Color>
+      </Element>
+      
+      <Element>
+         <Content>TrayState</Content>
+         <Resource>Font1</Resource>
+         <Dimensions>
+	    <Top>10</Top>
+	    <Left>400</Left>
+	    <Width>200</Width>
+	    <Height>40</Height>
+	 </Dimensions>
+	 <Color>
+	    <Red>70</Red>
+	    <Blue>70</Blue>
+	    <Green>70</Green>
+	 </Color>
+         <Align>Right</Align>
+      </Element>
+      
+      <Element>
+         <Content>MessageTitle</Content>
+         <Resource>Font1</Resource>
+         <Dimensions>
+	    <Top>76</Top>	    <Left>122</Left>	    <Width>380</Width>	    <Height>30</Height>
+	 </Dimensions>
+	 <Color>
+	    <Red>230</Red>	    <Blue>230</Blue>	    <Green>230</Green>
+    	 </Color>
+         <Align>Center</Align>
+      </Element>      
+
+      <Element>
+         <Content>MessageText</Content>
+         <Resource>Font1</Resource>
+         <Dimensions>
+	    <Top>159</Top>	    <Left>80</Left>	    <Width>480</Width>	    <Height>160</Height>
+	 </Dimensions>
+	 <Color>
+	    <Red>100</Red>	    <Blue>200</Blue>	    <Green>100</Green>
+	 </Color>
+         <Align>Center</Align>
+      </Element>  
+      
+      <Element>
+        <Content>MessageBackground</Content>
+         <Dimensions>
+	    <Width>640</Width>	    <Height>480</Height>	    <Top>0</Top>	    <Left>0</Left>
+	 </Dimensions>
+	 <Layer>0</Layer>
+	 <Resource>Dialog</Resource>
+      </Element>       
+
+      <Element>
+         <Content>QuestionTitle</Content>
+         <Resource>Font1</Resource>
+         <Dimensions>
+	    <Top>76</Top>	    <Left>122</Left>	    <Width>380</Width>	    <Height>30</Height>
+	 </Dimensions>
+	 <Color>
+	    <Red>200</Red>	    <Blue>200</Blue>	    <Green>200</Green>
+    	 </Color>
+         <Align>Center</Align>
+      </Element>      
+
+      <Element>
+         <Content>QuestionText</Content>
+         <Resource>Font1</Resource>
+         <Dimensions>
+	    <Top>159</Top>	    <Left>80</Left>	    <Width>480</Width>	    <Height>160</Height>
+	 </Dimensions>
+	 <Color>
+	    <Red>100</Red>	    <Blue>200</Blue>	    <Green>100</Green>
+	 </Color>
+         <Align>Background</Align>
+      </Element>  
+      
+      <Element>
+        <Content>QuestionBackground</Content>
+         <Dimensions>
+	    <Width>640</Width>	    <Height>480</Height>	    <Top>0</Top>	    <Left>0</Left>
+	 </Dimensions>
+	 <Layer>0</Layer>
+	 <Resource>Dialog</Resource>
+      </Element>
+
+      <Element>
+         <Content>QuestionTimer</Content>
+         <Resource>Font1</Resource>
+         <Dimensions>
+	    <Top>360</Top>	    <Left>100</Left>	    <Width>440</Width>	    <Height>60</Height>
+	 </Dimensions>
+	 <Color>
+	    <Red>70</Red>	    <Blue>90</Blue>	    <Green>70</Green>
+	 </Color>
+         <Align>Center</Align>
+      </Element>
+
+      <Element>
+         <Content>ProgressBarTitle</Content>
+         <Resource>Font1</Resource>
+         <Dimensions>
+	    <Top>76</Top>	    <Left>122</Left>	    <Width>380</Width>	    <Height>30</Height>
+	 </Dimensions>
+	 <Color>
+	    <Red>200</Red>	    <Blue>200</Blue>	    <Green>200</Green>
+    	 </Color>
+         <Align>Center</Align>
+      </Element>      
+
+      <Element>
+         <Content>ProgressBarText</Content>
+         <Resource>Font1</Resource>
+         <Dimensions>
+	    <Top>159</Top>	    <Left>80</Left>	    <Width>480</Width>	    <Height>160</Height>
+	 </Dimensions>
+	 <Color>
+	    <Red>100</Red>	    <Blue>200</Blue>	    <Green>100</Green>
+	 </Color>
+         <Align>Center</Align>
+      </Element>  
+      
+      <Element>
+        <Content>ProgressBarBackground</Content>
+         <Dimensions>
+	    <Width>640</Width>	    <Height>480</Height>	    <Top>0</Top>	    <Left>0</Left>
+	 </Dimensions>
+	 <Layer>0</Layer>
+	 <Resource>ProgressBack</Resource>
+      </Element>       
+      
+      <Element>
+         <Content>ProgressBarPercent</Content>
+         <Resource>Font1</Resource>
+         <Dimensions>
+	    <Top>360</Top>	    <Left>100</Left>	    <Width>440</Width>	    <Height>60</Height>
+	 </Dimensions>
+	 <Color>
+	    <Red>70</Red>	    <Blue>90</Blue>	    <Green>70</Green>
+	 </Color>
+         <Align>Center</Align>
+      </Element>
+
+      <Element>
+        <Content>ProgressBar</Content>
+         <Dimensions>
+	    <Width>440</Width>	    <Height>60</Height>	    <Top>350</Top>	    <Left>100</Left>
+	 </Dimensions>
+	 <Layer>0</Layer>
+	 <Resource>Background</Resource>
+      </Element>     
+            
+      <Element>
+         <Content>Status</Content>
+         <Dimensions>
+           <Width>300</Width>
+           <Height>40</Height>
+           <Top>40</Top>
+           <Left>340</Left>
+         </Dimensions>
+         <Align>Right</Align>
+         <Resource>Milhouse</Resource>
+         <Color>
+            <Red>200</Red>
+            <Green>200</Green>
+            <Blue>200</Blue>
+         </Color>
+      </Element>    
+   </Elements>
+</Skin>

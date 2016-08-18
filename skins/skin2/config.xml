@@ -1,0 +1,63 @@
+<Environment>
+
+      
+   
+   
+   <Menu>
+      <Name>Menu Root</Name>
+      <Children>
+      
+         <XBEMenu>
+	    <Name>apps</Name>
+  	    <Directory>/home/tburns/</Directory>
+	    <Target>default.xbe</Target>
+	    <HotKey>Ctrl_A</HotKey>
+	    <StatusText>Games Menu...</StatusText>
+	 </XBEMenu>
+         
+          <XBEMenu>
+	    <Name>games</Name>
+  	    <Directory>/home/tburns/</Directory>
+	    <Target>default.xbe</Target>
+	    <HotKey>Ctrl_B</HotKey>
+	    <StatusText>Games Menu...</StatusText>
+	 </XBEMenu>
+         
+          <XBEMenu>
+	    <Name>files</Name>
+  	    <Directory>/home/tburns/</Directory>
+	    <Target>default.xbe</Target>
+	    <HotKey>Ctrl_B</HotKey>
+	    <StatusText>Games Menu...</StatusText>
+	 </XBEMenu>
+
+          <XBEMenu>
+	    <Name>settings</Name>
+  	    <Directory>/home/tburns/</Directory>
+	    <Target>default.xbe</Target>
+	    <HotKey>Ctrl_B</HotKey>
+	    <StatusText>Games Menu...</StatusText>
+	 </XBEMenu>
+
+          <XBEMenu>
+	    <Name>reset</Name>
+  	    <Directory>/home/tburns/</Directory>
+	    <Target>default.xbe</Target>
+	    <HotKey>Ctrl_B</HotKey>
+	    <StatusText>Games Menu...</StatusText>
+	    <Color><Red>70</Red><Blue>0</Blue><Green>0</Green></Color>
+
+	 </XBEMenu>
+
+          <XBEMenu>
+	    <Name>turn off</Name>
+  	    <Directory>/home/tburns/</Directory>
+	    <Target>default.xbe</Target>
+	    <HotKey>Ctrl_B</HotKey>
+	    <StatusText>Games Menu...</StatusText>
+	 </XBEMenu>
+
+      </Children>
+   </Menu>
+   
+</Environment>

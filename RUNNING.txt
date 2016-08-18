@@ -1,0 +1,18 @@
+Assuming that you have a binary of OpenDash for whatever your target platform, now you must do a couple things to get it to run:
+
+edit config.xml.  Read the skinning/configuring tutorial at:
+http://th0mas.xbox-scene.com/releases/skinning.html .  The part you care about is the second half, about configuring the menu and the dialog.
+
+edit skin.pth.  If you're building for the xbox, it should be an explicit path:
+d:/skin/skin1/
+
+(that is, it is in the form drive:/directory/containing/skin/).  Therefore "drive:/directory/containing/skin/skin.xml" should exist.
+
+Otherwise it should probably look like:
+skin/skin1/
+
+If you want to, it could point to a explicit path, like /home/user/skins/skin2 or c:/opendash/skin1 or something.
+
+When you run the binary, it will look for both "config.xml" and "skin.pth" in it's current directory (no matter if running on xbox or computer).
+
+Enjoy.  Read the above skinning tutorial for skinning and configuring.
